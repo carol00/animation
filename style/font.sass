@@ -1,0 +1,72 @@
+body
+  font: 16px/1.5 Helvetica,"Lucida Grande","Microsoft JhengHei",sans-serif
+
+// size
+$font-size-base: 1em
+$font-size-small: $font-size-base - 0.1em
+$font-size-smaller: $font-size-small - 0.1em
+$font-size-tiny: $font-size-smaller - 0.1em
+$font-size-large: $font-size-base + 0.1em
+$font-size-larger: $font-size-large + 0.1em
+$font-size-huge: $font-size-larger + 0.1em
+
+// weight
+$font-weight-base: 600
+$font-weight-none: $font-weight-base - 100
+$font-weight-large: $font-weight-base + 100
+$font-weight-larger: $font-weight-large + 100
+$font-weight-huge: $font-weight-larger + 100
+
+// all
+.text
+  .content
+    font-size: $font-size-large
+
+.flexbox
+  .items
+    > p
+      font-size: $font-size-base
+
+header
+  .remind
+    font-size: $font-size-large
+  .shotcut
+    font-size: $font-size-small
+  .header-nav
+    font-size: $font-size-large
+    font-weight: $font-weight-base
+    .logo span
+      font-size: 2em
+  .page-header .page-nav
+    font-size: $font-size-base
+
+article
+  #top
+    .content
+      font-size: $font-size-base + 1em
+      span
+        font-size: $font-size-tiny
+  #cpu
+    .roll-out p
+      font-size: $font-size-larger
+
+  #recommend
+    .flexbox
+      .items > span
+        font-size: 5em
+
+footer
+  .go-top
+    font-size: 2em
+
++media-breakpoint-down(tablet)
+  header, aside, article, footer
+    font-size: 95%
+
++media-breakpoint-down(mobile)
+  header, aside, article, footer
+    font-size: 90%
+
++media-breakpoint-down(mini)
+  header, aside, article, footer
+    font-size: 80%

@@ -1,0 +1,27 @@
+// input
+.input-content
+  > div
+    padding: 2%
+    text-align: center
+    input
+      padding: 5px
+    label
+      margin-right: 10px
+.f-entrance
+  &:focus
+    border: 1px #2b90c0 solid
+.entrance-error
+  border: 1px #d44761 solid
+  animation: entrance-error 1s
+
+@keyframes entrance-error
+  20%
+    transform: translateX(-10px)
+  40%
+    transform: translateX(10px)
+  60%
+    transform: translateX(-5px)
+  80%
+    transform: translateX(5px)
+  100%
+    transform: translate(0)
