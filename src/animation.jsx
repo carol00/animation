@@ -1,4 +1,5 @@
 import {h} from './link'
+import Infinite from './infinite'
 
 export default props =>
 <div class="animation-display">
@@ -15,5 +16,5 @@ export default props =>
   <h3 class="subtitle">flutter</h3>
   <span class="circle flutter-shrink">shrink</span>
   <span class="circle flutter-zoom">zoom</span>
-
+  <Infinite />
 </div>
