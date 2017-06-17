@@ -1,0 +1,35 @@
+.tires
+  > *
+    margin: 0 auto
+  .frame
+    position: relative
+    border: 25px #070707 solid
+    border-radius: 50%
+    width: 150px
+    height: 150px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    > div
+      position: absolute
+      width: 100px
+      height: 20px
+      background: rgba(121, 121, 121, 0.81)
+      &:nth-of-type(4n+2)
+        transform: rotate(45deg)
+      &:nth-of-type(4n+3)
+        transform: rotate(90deg)
+      &:nth-of-type(4n+4)
+        transform: rotate(135deg)
+    &:before
+      content: ''
+      width: 100px
+      height: 100px
+      border-radius: 50%
+      border: 1px #6d6d6d solid
+  .ellipse
+    width: 90px
+    height: 10px
+    border-radius: 50%
+    background: rgba(0, 0, 0, 0.14)

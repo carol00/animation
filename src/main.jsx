@@ -1,4 +1,5 @@
 import {h} from './link'
+import Combine from './combine'
 import Transform from './transform'
 import Animation from './animation'
 import Color from './color'
@@ -6,7 +7,8 @@ import Color from './color'
 export default props =>
 <div class="wrap">
   <div class="content">
-    <Transform />
+    <Combine />
     <Animation />
+    <Transform />
   </div>
 </div>
