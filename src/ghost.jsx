@@ -2,7 +2,6 @@ import {h} from './link'
 
 export default props =>
 <div class="ghost">
-  <h4>ghost</h4>
   <div class="float-v">
     <div class="body">
       <div class="eyes">
