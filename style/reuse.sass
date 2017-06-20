@@ -23,9 +23,23 @@
     transform: rotate(360deg) translateX(0px)
 
 .float-v
-  animation: 8s normal infinite 0s float-v
+  animation: 8s ease infinite 0s float-v
 @keyframes float-v
   40%
     transform: translateY(10px)
   80%
     transform: translateY(-10px)
+
+.insect
+  animation: 0.8s linear 0s infinite insect
+@keyframes insect
+  from
+    transform: rotate(10deg)
+  to
+    transform: rotate(30deg)
+
+.slipper
+  animation: 0.4s linear 0.2s infinite slipper
+@keyframes slipper
+  to
+    transform: skew(20deg, -20deg)
