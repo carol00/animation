@@ -11,5 +11,5 @@ gulp.task \watch ->
   gulp.watch \src/template.ls <[template]>
   gulp.watch \src/** <[app]>
 
-gulp.task \b <[style template app worker server]>
+gulp.task \b <[style template]>
 gulp.task \default <[b watch dev]>

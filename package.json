@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "CSS animation toolbox",
   "scripts": {
+    "deploy": "gulp b && firebase deploy",
     "pretest": "gulp b",
     "test": "nyc --instrument false lsc test/start",
     "posttest": "nyc report -r lcov -r json"
